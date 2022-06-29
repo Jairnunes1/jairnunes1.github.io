@@ -1,0 +1,129 @@
+.formacao {
+  background: #141414;
+}
+
+.formacao-conteiner {
+  max-width: 1200px;
+  color: aliceblue;
+  grid-template-columns: 1fr 2fr;
+  display: grid;
+  padding-top: 60px;
+  margin: 0 auto;
+  gap: 100px;
+}
+.formacao-texto {
+  color: #a3a3a3;
+  font-size: 1.5rem;
+  max-width: 40ch;
+  padding: 0px 50px 50px 0px;
+}
+.formacao-texto strong {
+  color: #ffffff;
+}
+.formacao-faculdades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.formacao-itens {
+  background-color: #000000;
+  padding: 20px;
+  gap: 10px;
+  line-height: 1.5;
+  border-radius: 8px;
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+}
+.formacao-itens h3 {
+  font-weight: 100;
+  font-size: 1rem;
+  color: #aaaaaa;
+  margin-bottom: 10px;
+  position: relative;
+}
+.formacao-itens h3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url(/img/detalhe.svg) no-repeat center;
+  width: 4px;
+  height: 15px;
+  left: -25px;
+}
+.formacao-itens p{
+  font-size: 1.2rem;
+  max-width: 20ch;
+  flex: 1;
+}
+.formacao-itens span {
+  display: block;
+  color: #aaaaaa;
+  margin-top: 30px;
+}
+/* Certificados Cursos e Idiomas */
+.content-extra{
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+.formacao-extra {
+  margin-top: 50px;
+  gap: 10px;
+}
+.formacao-extra h3 {
+  font-size: 0.8rem;
+  flex: 1;
+  text-transform: uppercase;
+  color: #a3a3a3;
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: relative;
+} 
+.formacao-extra h3::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: -36px;
+  top: -2px;
+}
+.cursos h3::before{
+  background: url(../img/cursos.svg) no-repeat center center;
+}
+.idioma h3::before{
+  background: url(../img/idiomas.svg) no-repeat center center;
+}
+
+.formacao-extra li{
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+.formacao-extra span{
+  color: #8f8f8f;
+}
+.cursos li{
+  display: flex;
+  justify-content: space-between;
+}
+/* Responsivo CSS/MEDIA 800px*/
+@media (max-width: 800px){
+  .formacao-conteiner{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  .formacao-texto{
+    font-size: 1.25rem;
+    text-align: center;
+    max-width: none;
+  }
+  .formacao-extra ul{
+    margin: 0px 10px ;
+  }
+  .content-extra h3::before{
+    position: initial;
+    margin-bottom: 10px;
+  }
+}
